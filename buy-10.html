@@ -15,14 +15,14 @@
     }
 
     html, body {
-      width: 100%;
-      height: 100%;
-      background: #1FC053;
+      max-width: 100%;
+      max-height: 100%;
+      /**background: #1FC053;**/
+      background-image: linear-gradient(0deg, #1f9b8a 0%, #1fc44e 100%);
     }
 
-    img {
-      width: 25px;
-      height: 25px;
+    .rosario {
+      max-width: 100%;
     }
 
     div {
@@ -34,6 +34,38 @@
       height: 100%;
       color: white;
       font-family: "Roboto", sans-serif;
+      margin-top: 50px;
+    }
+
+    .course {
+      font-size: 5em;
+      text-align: center;
+    }
+    .title {
+      font-size: 3em;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .subtitle {
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    .button {
+      background-color: #62158c;
+      border: 0;
+      color: white;
+      font-size: 1.5em;
+      font-weight: bold;
+      border-radius: 10px;
+      padding: 25px;
+      margin-top: 50px;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: #92158c;
     }
   </style>
 </head>
@@ -41,15 +73,12 @@
 <body>
 
   <div>
-    <h1>Tesis Online</h1>
-    <p>Cargando sitio</p>
-    <img src="loading.gif" alt="Cargando...">
+    <h3 class="course">Tesis Online</h3>
+    <h1 class="title">¿Cansado de no poder hacer tu tesis?</h1>
+    <h2 class="subtitle">Aquí tienes el curso definitivo que te ayudará a hacer una tesis sin complicaciones y a terminarla en corto tiempo...</h2>
+    <a class="button" href="http://bit.ly/comprar-tesis-online-10">Compre el curso ahora - 10% de descuento</a>
+    <img src="dra.-rosario-martinez-760x1024.png" alt="Rosario Martinez" class="rosario">
   </div>
 
-  <script>
-    setTimeout(function() {
-      window.location.href = "https://go.hotmart.com/L18732141C?ap=0903";
-    }, 2500);
-  </script>
 </body>
 </html>
